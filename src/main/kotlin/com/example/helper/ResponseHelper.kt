@@ -11,6 +11,8 @@ suspend fun ApplicationCall.response(status: HttpStatusCode) {
     val method = request.httpMethod
     val message = "Request succeeded."
 
+    application.environment.log.info("Api called.\n\turi    = {}\n\tmethod = {}", uri, method.value)
+
     response.status(status)
     respond(ResponseBody.of(uri = uri, statusCode = status, method = method, message = message))
 }
