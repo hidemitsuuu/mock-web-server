@@ -42,3 +42,10 @@ Content-Type: application/json
 |              | 201 | Created | /success/created |
 |              | 202 | Accepted | /success/accepted |
 |              | 204 | No Content | /success/no-content |
+| 4XX(ClientError) | 400 | Bad Request | /client-error/bad-request |
+|                  | 401 | Unauthorized | /client-error/unauthorized |
+|                  | 403 | Forbidden | /client-error/forbidden |
+|                  | 404 | Not Found | /client-error/not-found |
+|                  | 405 | Method Not Allowed | /client-error/method-not-allowed |
+|                  | 408 | Request Timeout | /client-error/request-timeout |
+|                  | 412 | PreconditionFailed | /client-error/precondition-failed |
